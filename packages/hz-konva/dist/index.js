@@ -1,0 +1,1 @@
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(e="undefined"!=typeof globalThis?globalThis:e||self).hzKonva=n()}(this,(function(){"use strict";return class{constructor(){this.init()}init(){console.log("HzKonva init")}}}));

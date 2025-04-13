@@ -1,0 +1,29 @@
+{
+  "name": "hz-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rimraf dist && vitest run && rollup -c rollup.config.js",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "pnpm",
+    "monorepo"
+  ],
+  "author": {
+    "name": "hjd",
+    "gitee": "https://gitee.com/hjdbenny/hz-utils.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {}
+}

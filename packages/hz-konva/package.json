@@ -1,0 +1,26 @@
+{
+  "name": "@hz/hz-konva",
+  "version": "1.0.0",
+  "description": "konva二次封装",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "hjd",
+    "gitee": "https://gitee.com/hjdbenny/hz-utils.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "packageManager": "pnpm@10.8.0"
+}
