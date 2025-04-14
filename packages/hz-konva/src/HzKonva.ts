@@ -4,7 +4,7 @@ class HzKonva {
     }
 
     init() {
-        console.log("HzKonva init")
+  console.log("HzKonva init")
     }
 }
 export default HzKonva
