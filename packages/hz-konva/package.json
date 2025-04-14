@@ -1,6 +1,6 @@
 {
-  "name": "@hz/hz-konva",
-  "version": "1.0.0",
+  "name": "hz-konva",
+  "version": "1.0.1",
   "description": "konva二次封装",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
