@@ -1,6 +1,6 @@
 {
   "name": "hz-konva",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "konva二次封装",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
@@ -23,5 +23,8 @@
     "dist",
     "README.md"
   ],
-  "packageManager": "pnpm@10.8.0"
+  "packageManager": "pnpm@10.8.0",
+  "dependencies": {
+    "events": "^3.3.0"
+  }
 }
