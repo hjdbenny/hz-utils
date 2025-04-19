@@ -1,10 +1,21 @@
+import EventEmitter from "events"
 class HzKonva {
-    constructor() {
-      this.init()
-    }
 
-    init() {
-  console.log("HzKonva init")
-    }
+  event: EventEmitter = new EventEmitter()
+  constructor() {
+    this.init()
+  }
+
+  init() {
+    setTimeout(() => {
+      this.event.emit('init', 'HzKonva init')
+    });
+  }
+
+  on(event: string, callback: any) {
+    this.event.on(event, (data: any) => {
+      callback(data)
+    })
+  }
 }
 export default HzKonva

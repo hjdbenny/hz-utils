@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import HzKonva from 'hz-konva';
+// import HzKonva from 'hz-konva';
+import HzKonva from '../../packages/hz-konva/src/HzKonva';
 
-console.log(new HzKonva())
+const hzKonva = new HzKonva()
+hzKonva.on('init', (data: string) => {
+  console.log("🚀 ~ hzKonva.on ~ data:", data)
+})
 </script>
 
 <template>
