@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "create": "node ./scripts/create-config.mjs",
+    "dev:demo": "cd demo && pnpm dev",
     "build": "pnpm -r --filter=./packages/* run build",
     "release": "pnpm changeset publish --no-git-checks",
+    "publish:hz-konva": "cd ./packages/hz-konva && pnpm publish --no-git-checks",
     "publish": "pnpm --filter=./packages/* run build && pnpm changeset && pnpm changeset version && pnpm release",
     "prepare": "husky install",
     "test": "npx eslint ./packages  --ext ts,vue,js --fix",
