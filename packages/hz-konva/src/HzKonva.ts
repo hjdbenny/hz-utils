@@ -3,13 +3,11 @@ class HzKonva {
 
   event: EventEmitter = new EventEmitter()
   constructor() {
-    this.init()
   }
 
-  init() {
-    setTimeout(() => {
-      this.event.emit('init', 'HzKonva init')
-    });
+  init(domId: string) {
+    this.event.emit('init', 'HzKonva init')
+
   }
 
   on(event: string, callback: any) {
