@@ -3,7 +3,7 @@ import EventEmitter from 'events';
 declare class HzKonva {
     event: EventEmitter;
     constructor();
-    init(): void;
+    init(domId: string): void;
     on(event: string, callback: any): void;
 }
 
