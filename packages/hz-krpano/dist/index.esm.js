@@ -1,0 +1,1 @@
+import t from"events";class e{constructor(){this.event=new t}init(){setTimeout((()=>{this.event.emit("init","HzKrpano init")}))}on(t,e){this.event.on(t,(t=>{e(t)}))}loadSrcipt(){const t=document.createElement("script");t.src="./tour.js",t.type="text/javascript",document.head.appendChild(t)}}export{e as default};

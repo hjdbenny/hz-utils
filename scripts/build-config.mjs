@@ -62,6 +62,7 @@ export const buildConfig = ({ packageName }) => {
         // 配置路径别名
         alias({
           entries: [
+            { find: '@hz-krpano', replacement: '../packages/hz-krpano/src' }, 
             { find: '@', replacement: '../packages/hz-konva/src' }
           ]
         }),
@@ -82,7 +83,10 @@ export const buildConfig = ({ packageName }) => {
     plugins: [
       dts(),
       alias({
-        entries: [{ find: '@', replacement: './src' }]
+        entries: [
+          { find: '@hz-krpano', replacement: './src' }, 
+          { find: '@', replacement: './src' }
+        ]
       })
     ],
     output: {

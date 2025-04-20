@@ -5,9 +5,10 @@ class HzKonva {
   constructor() {
   }
 
-  init(domId: string) {
-    this.event.emit('init', 'HzKonva init')
-
+  init() {
+    setTimeout(() => {
+      this.event.emit('init', 'HzKonva init')
+    });
   }
 
   on(event: string, callback: any) {

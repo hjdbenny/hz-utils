@@ -1,7 +1,7 @@
 {
-  "name": "hz-konva",
-  "version": "1.0.5",
-  "description": "konva二次封装",
+  "name": "hz-krpano",
+  "version": "1.0.0",
+  "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
   "browser": "dist/index.js",
@@ -11,7 +11,10 @@
     "build": "rimraf dist && rollup -c rollup.config.js",
     "publish": "pnpm build && pnpm publish --no-git-checks"
   },
-  "keywords": [],
+  "keywords": [
+    "pnpm",
+    "monorepo"
+  ],
   "author": {
     "name": "hjd",
     "gitee": "https://gitee.com/hjdbenny/hz-utils.git"
@@ -22,7 +25,6 @@
     "dist",
     "README.md"
   ],
-  "packageManager": "pnpm@10.8.0",
   "dependencies": {
     "events": "^3.3.0"
   }

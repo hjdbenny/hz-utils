@@ -8,8 +8,8 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",
-    "build": "rimraf dist && vitest run && rollup -c rollup.config.js",
-    "test": "vitest run"
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "publish": "pnpm build && pnpm publish --no-git-checks"
   },
   "keywords": [
     "pnpm",

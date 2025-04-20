@@ -20,6 +20,9 @@ const getSpace = (num) => {
 
 // 复制模板文件
 const copyFileSync = ({ templatePath, projectPath, projectName }) => {
+  console.log(templatePath)
+  console.log(projectPath)
+  console.log(projectName)
   const stats = fs.statSync(templatePath);
 
   // 判断是否是文件夹
@@ -142,7 +145,7 @@ const create = async ({ templatePath, packagesPath, projectName }) => {
   updateBuildConfig(buildConfigPath, projectName)
   updateTsConfig(tsConfigPath, projectName)
   updateRollupConfig(projectName)
-  updateVitestConfig(projectName)
+  // updateVitestConfig(projectName)
   console.log(`创建 ${projectName} 项目成功，运行 pnpm i 安装依赖！\n`);
   console.log('根据自己需求修改子包的 package.json 信息! \n');
 }
